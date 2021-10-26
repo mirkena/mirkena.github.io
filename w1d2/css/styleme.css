@@ -1,0 +1,26 @@
+body{
+    background-color: dimgray;
+}
+h1{
+    color: lightgray;
+}
+p{
+    color: palegoldenrod;
+}
+ul{
+    color:peru
+}
+ol{
+    color: lightgoldenrodyellow;
+}
+h2{
+    color:lightblue;
+}
+img.happy{
+    width: 500px;
+    height: 400px;
+}
+img.sad{
+    width: 500px;
+    height: 400px;
+}
