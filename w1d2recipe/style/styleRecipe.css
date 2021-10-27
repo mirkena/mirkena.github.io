@@ -1,0 +1,40 @@
+body{
+    color: #404040;
+    font: 11pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightgoldenrodyellow;
+}
+h1,h2{
+    text-decoration: underline;
+    color: #A4A400;
+    background-color: #f0f0f0;
+}
+h1{
+    text-align: center;
+    font: 22pt bold;
+    font-family: 'Lucia Sans', Helvetica, Arial;
+}
+h2{
+    text-align: left;
+    font: 18pt normal;
+}
+a{
+    text-decoration: underline;
+    color: #A4A400;
+}
+p.coloredParagraph{
+    background-color: #FFE295;
+}
+ul.listWithNoBullet{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+section.copyrightSection{
+    font-family: monospace;
+}
+section.userComment{
+    align-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
