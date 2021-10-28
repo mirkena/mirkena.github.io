@@ -86,7 +86,7 @@ body{
     border-radius: 10px;
     padding: 8px;
 }
-#comment_images{
+.comment_images{
     margin-bottom: auto;
     vertical-align: middle;
     
