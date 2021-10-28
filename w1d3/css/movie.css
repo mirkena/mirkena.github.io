@@ -68,15 +68,18 @@ body{
     margin-right: auto;
     width: 20%;
 }
-#col1{
-   position: relative;
-   padding-top: 2%;
-   bottom: 4.75em;
+
+.comment img{
+   
+    padding-bottom: 3%;
 }
 .rotten_column{
     width: 30%;
     margin-left: 2%;
+    margin-right: 2%;
     display: inline-block;
+    float: right;
+    
 }
 .comment{
     font-size: 9px;
@@ -86,10 +89,12 @@ body{
     border-width: 2px;
     border-radius: 10px;
     padding: 8px;
+   
 }
 .comment_images{
-    margin-bottom: auto;
+ 
     vertical-align: middle;
+    margin-bottom: 20pt;
     
 }
 #rotten_column1 img,#rotten_column2 img{
