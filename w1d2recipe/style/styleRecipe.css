@@ -30,7 +30,7 @@ ul.listWithNoBullet{
     padding: 0;
     margin: 0;
 }
-section.copyrightSection{
+div.copyrightSection{
     font-family: monospace;
 }
 section.userComment{
