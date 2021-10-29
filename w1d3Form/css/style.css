@@ -8,7 +8,7 @@ div.signup{
 }
 div{
     margin-bottom: 10px;
-    
+
    
 }
 label{
@@ -80,7 +80,7 @@ footer{
      border-color:#5d6f79;
     font-weight: bolder;
     font-size: 15px;
-     font:bold15px arial,sans-serif;
+     font:bold 15px arial,sans-serif;
      text-shadow:none;
 }
 .back{
