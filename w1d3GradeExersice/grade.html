@@ -7,10 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://mumstudents.org/params.php" method="get">
-        <h1>Retrieve your grade</h1> 
-        <p>Name: ...</p> <p>Student ID: ...</p>
-         Get Grade! 
-    </form>
+    <div class="grade">
+        <form action="http://mumstudents.org/params.php" method="get">
+            <label for="Enter_FName">First Name</label>
+            <input type="text" name="Enter_FName" value=""><br>
+            <label for="Last_Name">Last Name</label>
+            <input type="text" name="Enter_LName" value=""><br>
+            <label for="Asignment">Assignment Type</label>
+            <select name="Asignment" id="asgt" >
+                <option value="lab">Lab</option>
+                <option value="exersice">Exercise</option>
+            </select><br>
+            <label for="entry">Select Your Entry</label>
+            <select name="entry" id="entry" >
+                <option value="aug">August</option>
+                <option value="oct">October</option>
+                <option value="feb">February</option>
+                <option value="may">May</option>
+            </select><br>
+            <label for="myself">Are you sure you are looking for your own grade?</label><br>
+            <label for="myself"> Yess</label>
+            <input type="radio" name="myself">
+            <label for="myself" name="myself">No</label>
+            <input type="radio" name="myself"><br>
+            <button type="submit"  value="GetGrade">Submit</button> 
+        </form>
+    </div>
+    
 </body>
 </html>
