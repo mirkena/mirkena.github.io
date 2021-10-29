@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="grade">
         <form action="http://mumstudents.org/params.php" method="get">
-            <label for="Enter_FName">First Name</label>
-            <input type="text" name="Enter_FName" value=""><br>
-            <label for="Last_Name">Last Name</label>
-            <input type="text" name="Enter_LName" value=""><br>
-            <label for="Asignment">Assignment Type</label>
+            <div>
+                <label for="Enter_FName">First Name</label>
+               <input type="text" name="Enter_FName" value=""><br>
+            
+                <label for="Last_Name">Last Name</label>
+                <input type="text" name="Enter_LName" value=""><br>
+            </div>
+            <div>
+                <label for="Asignment">Assignment Type</label>
             <select name="Asignment" id="asgt" >
                 <option value="lab">Lab</option>
                 <option value="exersice">Exercise</option>
             </select><br>
-            <label for="entry">Select Your Entry</label>
-            <select name="entry" id="entry" >
+            </div>
+            <div>
+                <label for="entry">Select Your Entry</label>
+            <select  id="entry" >
                 <option value="aug">August</option>
                 <option value="oct">October</option>
                 <option value="feb">February</option>
                 <option value="may">May</option>
             </select><br>
-            <label for="myself">Are you sure you are looking for your own grade?</label><br>
-            <label for="myself"> Yess</label>
-            <input type="radio" name="myself">
-            <label for="myself" name="myself">No</label>
+            </div>
+            <div>
+                <span>Are you sure you are looking for your own grade?</span><br>
+            <label for="no"> Yess</label>
+            <input type="radio" name="no">
+            <label for="yes" >No</label>
             <input type="radio" name="myself"><br>
-            <button type="submit"  value="GetGrade">Submit</button> 
+            </div>
+            <div>
+                <button type="submit"  value="GetGrade">Submit</button> 
+            </div>
         </form>
+    </div>
+    <div class="validation_section">
+        <a href="https://validator.w3.org/nu/?doc=https://mirkena.github.io/w1d3GradeExersice/grade.html"><img src="../image/w3c-html.png" alt="Valid HTML5" /></a> <br />
+        <a href="https://validator.w3.org/nu/?doc=https://mirkena.github.io/w1d3Form/css/style.css"><img src="../image/w3c-css.png" alt="Valid CSS" /></a>
     </div>
     
 </body>
