@@ -18,11 +18,11 @@ function decohelp(){
     textArea=document.getElementById("textareas");
     //fsize = window.getComputedStyle(document.getElementById("textareas").fontSize);
     buttons=document.getElementById("decor");
-   buttons.onclick=changeFont;
-    
+   buttons.onclick=fontTimer;
+
     //fsize=document.getElementById("textareas").style.fontSize;
 }
-function changeFont(){ 
+function fontTimer(){ 
     if(timer==null){
         timer = setInterval(resize,500);
     }else{
