@@ -1,0 +1,38 @@
+1.
+setTimeout(booyah, 2000); ----on this case the timer wait for 2000 micro seconds and call the function booyah();
+setTimeout(booyah(), 2000);---but in this case it directly goes to booyah() function once he saw the bracket
+2.This two alerts display six as their order of preference
+alert(x);
+ alert(y(2,3));
+3.
+function booyah1(){ alert("BOOYAAH "); }
+function booyah2(){ setTimeout(delay2, 3000); }
+function delay2(){
+	alert("BOOYAAH ");
+} 
+function myFunction() {
+   setTimeout(booyah1, 3000);
+   setTimeout(booyah2(), 3000);
+}
+4.
+In short, unobtrusive JavaScript is a way of writing JavaScript so that your site visitors are not shut out of your site for some reasons—even if your JavaScript is not working correctly for them, they should still be able to use your site, albeit at a more basic level. 
+David Flanagan's book JavaScript: The Definitive Guide (2006) said that while there is no specific formula, there are three main goals of unobtrusive JavaScript:[4]
+
+To separate JavaScript from HTML markup, as well as keeping modules of JavaScript independent of other modules using basic conventions such as the use of namespaces to prevent namespace collisions and the use of module initialization code;
+To degrade gracefully—all content should be available without all or any of the JavaScript running successfully;
+To not impede the accessibility of the HTML, and ideally to improve it, whether the user has personal disabilities or are using an unusual, or unusually configured, browser.
+The Web Standards Project, in its JavaScript Manifesto (2006), said that the "purpose of JavaScript is enhancing the usability of web pages by adding interaction to them", and described four benefits of unobtrusive DOM scripting:[9]
+
+Usability: An unobtrusive DOM script does not draw the attention of the user—"visitors just use it without thinking about it."
+Graceful degradation: Unobtrusive DOM scripts never generate error messages, in any browser, even when they fail. If features cannot be presented properly, they silently disappear.
+Accessibility: If any script fails, the page still delivers its core functions and information via the markup, stylesheets and/or server-side scripting.
+Separation: For the benefit of other and future web developers, all JavaScript code is maintained separately, without impacting other files of script, markup or code.
+For the Paris Web Conference in 2007, Christian Heilmann identified seven rules of unobtrusive JavaScript, some of which were wider in scope than other narrower definitions of "unobtrusive":[10]
+
+"Do not make any assumptions": Defensive programming techniques should allow for the possibilities that JavaScript may not run, the browser may not support expected methods, the HTML may have changed, unexpected input devices may be in use and other scripts may either not be present or may be encroaching on the global namespace.
+"Find your hooks and relationships", such as IDs and other aspects of the expected HTML.
+Leave traversing individual DOM objects to the experts, such as to the CSS handler built into the browser where possible.
+"Understand browsers and users", particularly how browsers fail, what assumptions users make, and unusual configurations or usages.
+"Understand events", including how they 'bubble' and the features of the Event object that is passed to most event handlers.
+Play well with other scripts by avoiding global function and variable names.
+"Work for the next developer" by using self-explanatory variable and function names, creating logical and readable code, making dependencies obvious,
