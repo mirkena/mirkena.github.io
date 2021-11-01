@@ -14,6 +14,74 @@
 <img id="myImage" src="off.gif" style="width:100px">
 
 <button onclick="d()">Turn off the light</button>
+<button onclick="m();">Click me!</button>
 
+<input id="output" type="text" value="replace me" />
+
+<button value="Say Haleluya" onclick="window.print()">Hey Halleluyaa</button><br>
+<p id="add"></p>
+<script>
+   // document.write(2+3);
+    var x="6" + 6;
+    const s = "Connie Client";
+let fName = s.substring(0, s.indexOf(""));
+    var b=document.getElementById("add").innerHTM=fName;
+    const xq=5;
+    console.log(!xq);
+     console.log(xq);
+     console.log(!!xq);
+    document.write(xq);
+    document.write(b);
+    document.write(1+"1");
+    document.write(parseFloat("23 My age is 34 \n"));
+    const a = [1,3,5,3,3];
+    const bb = a.map(function(elem, ie, arrsay) {
+        return elem + 3});
+    document.write(bb);
+    window.onload = function(){
+alert("Hello World!");
+
+function a() {
+     return {
+       a: 1 
+     }
+}
+function b(){ //OTBS – ok, but not good practice according to some (Crockford, …)
+   return 
+   { 
+       a : 1 ;
+     }
+}
+console.log(a()); //object
+console.log(b()); //undefined
+
+localStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML
+= localStorage.getItem("lastname");
+
+
+if (sessionStorage.clickcount) {
+sessionStorage.clickcount =
+Number(sessionStorage.clickcount) + 1;
+} else {
+sessionStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML =
+"You have clicked the button " +
+sessionStorage.clickcount +
+" time(s) in this session.";
+function changeText() {
+const textbox = document.getElementById("output");
+textbox.value = "Hello, world!";
+}
+}
+function m(){
+    window.prompt("http://facebook.com", "MyFoo Window",
+"width=900,height=600,scrollbars=1");
+}
+
+</script>
+<p id="result"></p>
 </body>
 </html>
