@@ -1,6 +1,12 @@
-function c(){
-    document.getElementById('myImage').src='on.gif';
+// function c(){
+//     document.getElementById('myImage').src='on.gif';
+// }
+// function d(){
+//     document.getElementById('myImage').src='off.gif';
+// }
+
+function getA(str){
+	return function(){alert("HAAAAAP");}
 }
-function d(){
-    document.getElementById('myImage').src='off.gif';
-}
+    var d=getA("heeeey");
+    getA();
