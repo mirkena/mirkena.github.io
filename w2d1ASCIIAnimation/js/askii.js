@@ -1,3 +1,4 @@
+"use strict";
 var keys = ["blank","Custom","Exercise","Juggler","Bike","Dive"];
 var i=0;
 var timer;
