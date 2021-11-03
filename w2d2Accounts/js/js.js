@@ -1,5 +1,5 @@
 var Factory = function () {
-    this.createAccount = function (type,balance) {
+    this.createAccount = function (balance) {
         var account;
 
         if (type === "bussiness") {
@@ -11,10 +11,10 @@ var Factory = function () {
         } 
 
         account.type = type;
-        account.balance=balance;
+       
 
         account.say = function () {
-            alert(this.type + ": Account Name " + this.balance + "Balance");
+            alert(this.balance + "Balance");
         }
 
         return account;
@@ -48,6 +48,9 @@ function run() {
         accounts[i].say();
     }
 }
+function call(balance){
+    alert("balance");
+}
 var typtxt="Saving";
 var baltxt=25;
 var btn;
@@ -57,10 +60,10 @@ function passAcc(){
     baltxt=document.getElementById("deposit");
     btn=document.getElementById("createAcc");
     outpt=document.getElementById("out");
-    btn.onclick=account.say;
+    btn.onclick=call(baltxt.value);
    
 }
 function startAcc(){
-    outpt.innerHTML="hello"
+    alert("hello");
 }
 window.onload=passAcc;
