@@ -1,69 +1,42 @@
-var Factory = function () {
-    this.createAccount = function (balance) {
-        var account;
+var accountInfoList=[];
+var myAccModule=(function(){
+    var account={
+        accountName: "",
+        deposite: 0
+    };
+    var createAccount=function(accountName, deposite) {
+        var newAcc=Object.create(account);
+         newAcc.accountName=accountName;
+         newAcc.deposite=deposite;
+         return newAcc;
+    };
+    return {
+        createAccount:createAccount
+    };
 
-        if (type === "bussiness") {
-            account = new Saving(balance);
-        } else if (type === "saving") {
-            account = new Checking(balance);
-        } else if (type === "checkin") {
-            account = new Bussiness(balance);
-        } 
+})();
 
-        account.type = type;
-       
+window.onload=function(){
+    var createAcc=document.getElementById("createAcc");
+    createAcc.onclick=onAddAccountClicked;
+};
+function onAddAccountClicked(){
+    let accountNameElement=document.getElementById("name");
+    let depositeElement=document.getElementById("deposit");
+    const accountName=accountNameElement.value.trim();
+    const deposite=depositeElement.value.trim();
 
-        account.say = function () {
-            alert(this.balance + "Balance");
-        }
-
-        return account;
+    if(accountName===""||deposite===""){
+        alert("Please enter account name and deposite");
+        return;
     }
-}
-
-var Saving = function (balance) {
-    this.balance = balance;
-};
-
-var Checking = function () {
-    this.balance = balance;
-};
-
-var Bussiness = function () {
-    this.balance = balance;
-};
-
-
-
-function run() {
-
-    var accounts = [];
-    var factory = new Factory();
-
-    accounts.push(factory.createAccount("Saving"));
-    accounts.push(factory.createAccount("Checking"));
-    accounts.push(factory.createAccount("Bussiness"));
-
-    for (var i = 0, len = accounts.length; i < len; i++) {
-        accounts[i].say();
+    var newAcc=myAccModule.createAccount(accountName,deposite);
+    accountInfoList.push(newAcc);
+    let mytextarea=document.getElementById("out");
+    mytextarea.value="";
+    for(let i=0;i<accountInfoList.length;i++){
+       mytextarea.value +="\n Account name: "+accountInfoList[i].accountName
+           +" Balance: "+accountInfoList[i].deposite;
     }
+
 }
-function call(balance){
-    alert("balance");
-}
-var typtxt="Saving";
-var baltxt=25;
-var btn;
-var outpt;
-function passAcc(){
-    typtxt=document.getElementById("name");
-    baltxt=document.getElementById("deposit");
-    btn=document.getElementById("createAcc");
-    outpt=document.getElementById("out");
-    btn.onclick=call(baltxt.value);
-   
-}
-function startAcc(){
-    alert("hello");
-}
-window.onload=passAcc;
