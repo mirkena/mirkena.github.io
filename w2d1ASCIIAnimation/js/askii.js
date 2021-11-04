@@ -4,7 +4,8 @@ var i=0;
 var timer;
 var textArea;
 var startButton;
-var endButton;
+
+var stopButton;
 var select;
 var fontSelect;
 var selectTurbo;
@@ -12,11 +13,11 @@ var initialText;
 var frame;
 var delay = 250;
 function functionsAfterLoad(){
-    startButton = document.getElementById("start");
-    stopButton = document.getElementById("stop");
+    startButton = document.getElementById("starts");
+    stopButton = document.getElementById("stops");
     textArea  = document.getElementById("text-area");
-    startButton = document.getElementById("start");
-    endButton = document.getElementById("stop");
+    startButton = document.getElementById("starts");
+    
     select = document.getElementById("animation");
     fontSelect = document.getElementById("fontsize");
     selectTurbo = document.getElementById("turbo");
@@ -47,14 +48,14 @@ function startFunction(){
     i=0;
     initialText = textArea.value;
     startButton.disabled = true;
-    endButton.disabled = false;
+    stopButton.disabled = false;
     timer = setInterval(displayAnimation,delay);
    
 }
 
 function stopFunction(){
     startButton.disabled = false;
-    endButton.disabled = true;
+    stopButton.disabled = true;
     clearInterval(timer);
     textArea.value = initialText;
 }
@@ -80,7 +81,7 @@ function changeTurbo(){
     }else{
         delay = 250;
     }
-    if(!endButton.disabled){
+    if(!stopButton.disabled){
         clearInterval(timer);
         timer = setInterval(displayAnimation,delay);
     }
