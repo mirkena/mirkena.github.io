@@ -5,23 +5,22 @@
 //     document.getElementById('myImage').src='off.gif';
 // }
 
-x = 1;
-var a = 5;
-var b = 10;
-var c = function(a, b, c) {
-            var x = 10;    
-           document.write(x); 
-           document.write(a);
-       var f = function(a, b, c) {
-               b = a;
-               document.write(b);
-               b = c;
-               var x = 5;
-       }    
-       f(a,b,c);
-           document.write(b);
-       } 
-           c(8,9,10);
-       document.write(b);
-       document.write(x);
+var emp2= (function(){
+    emp.extension = function () {
+        var address;
+       emp.setAddres = function setAddress(newAddress){
+            address = newAddress;
+        }
+        emp.getAddres = function getAddress(){
+            return address;
+        }
+        };
+        return emp;
+    })( );
+    
+
+console.log(emp2);
+
+
+    
        
