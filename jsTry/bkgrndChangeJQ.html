@@ -8,16 +8,44 @@
     <script type="text/javascript" src="jquery-3.6.0.js"></script>
     <script>
         $(document).ready(function(){
-            $("div h1").css("background-color","red");
+            $("div h1").hover(function(){
+                $("div h1").css("font-size","100px");
+            })
+            $("div h1").mouseleave(function(){
+                $("div h1").css("font-size","30px");
+            })
+            // $("#btnSubmit").bind('click', function() {
+            //     $("div").toggle();
+            //     alert("Hey Sup")
+            // });
+            $("#btnSubmit").click( function(){
+            // Some jQuery here!
+                $("div").toggle();
+                $("#h1").remove();
+                alert("Hey Sup")
+            });
+           // $("#btnSubmit").unbind('click');
+            $("#myElement").bind ('focus', function() {
+                alert("I've got focus");
+            });
+            $("#myElement").click(function(){
+                alert('You clicked me.');
+            });
+            //$("#myElement").unbind();
+           
         });
+        
         
     </script>
 </head>
 <body> 
-    <h1>abc</h1><br>
+    <h1 id="h1">abc</h1><br>
     <div> 
         <h1>div-1</h1> 
-        <h1>div-2</h1>
+        <h1 >div-2</h1>
      </div> 
-     <h1>xyz</h1> </body> 
+     <h1>xyz</h1> 
+    <input type="submit" id="btnSubmit">
+    <input type="button" id="myElement" value="myElement">
+    </body> 
 </html>
