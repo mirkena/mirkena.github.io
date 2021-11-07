@@ -29,6 +29,13 @@ div{
     border: 0px;
     height: 50%;
 }
-.guess_box{
-    height: 245px;
+ 
+.discount{
+    border: solid #0f0 3px;
+    }
+.no_discount{
+    border: solid #f00 3px;
+}
+.my_hover{
+    border: solid #00f 3px;
 }
