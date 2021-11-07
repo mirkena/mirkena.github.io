@@ -5,22 +5,12 @@
 //     document.getElementById('myImage').src='off.gif';
 // }
 
-var emp2= (function(){
-    emp.extension = function () {
-        var address;
-       emp.setAddres = function setAddress(newAddress){
-            address = newAddress;
+        function d(){
+               
+                setTimeout(function(){console.log("Mirkena")},4);
+                console.log("Bor");
         }
-        emp.getAddres = function getAddress(){
-            return address;
-        }
-        };
-        return emp;
-    })( );
-    
-
-console.log(emp2);
-
-
+        d();
+        console.log("Helo");
     
        
