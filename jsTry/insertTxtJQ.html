@@ -12,11 +12,12 @@
          $(document).ready(function(){
              var tx1="<p>Helloo</p>";
              $("p").append(tx1);
+             
          }
-
-         );
-         
+         );  
+         //$( "p" ).after( document.createTextNode( "Hello" ) );
         </script> 
+         <b>Not visible Unless called bey $( "p" ).after( document.createTextNode( "Hello" ) );</b>
 </head>
 <body>
     <p>Is jQuery FUN or what? </p> 
