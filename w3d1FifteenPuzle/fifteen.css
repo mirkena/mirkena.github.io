@@ -22,7 +22,7 @@ body, button {
 	width: 90px;
 	height: 90px;
 	position: absolute; */
-    background-image: url(background.jpg);
+    background-image: url(background.png);
 	border: 5px solid black;
 	color: rgb(231, 200, 122);
 	font-size: 40pt;
