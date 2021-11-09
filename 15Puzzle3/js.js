@@ -45,7 +45,7 @@ var spaceX;
 				this.style.color = "#006600"; //text color changes to green when a puzzle piece is near an empty space
 
 				this.style.textDecoration = "underline"; //underlines the number of the puzzle piece piece
-                
+
                 this.style.backgroundImage="url('http://mumstudents.org/cs472/2021-11-BL/Homework/9puzzle/resources/background.jpg')"; 
                 //sets the image for the puzzle's background 
 
@@ -258,7 +258,7 @@ function Notify() //notifies the user
 	{
 
 		var body = document.getElementsByTagName('body'); 
-        
+
 	    body[0].style.backgroundImage= "url('http://assets.pokemon.com/assets/cms2/img/video-games/video-games/pokemon_go/boxart.jpg')";
 	    //sets background pic to show user that they had completed the puzzle
 		
