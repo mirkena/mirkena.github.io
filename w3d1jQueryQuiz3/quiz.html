@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>text demo</title>
+    <style>
+        p {
+            color: blue;
+            margin: 8px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul> 
+        <li id="element1">list item 1</li> 
+        <li id="element2">list item 2</li> 
+        <li  class="third-item" id="element3">list item 3</li> 
+        <li id="element4">list item 4</li> 
+        <li id="element4">list item 5</li> 
+    </ul> 
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+        $("document").ready(function () {
+           $(".third-item").prev().css("background-color","red");
+           $("ul").click(function(x,y){
+            $(x).swapWith($(y));
+           })
+        });
+
+
+
+    </script>
+    
+
+
+
+    </script>
+</body>
+
+</html>
