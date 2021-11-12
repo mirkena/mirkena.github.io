@@ -1,0 +1,11 @@
+body{
+	text-align: center;
+}
+
+#puzzlearea{
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 400px;
+	
+}
