@@ -12,5 +12,8 @@
         }
         d();
         console.log("Helo");
+        document.getElementById("p").src=url("f.jpg");
     
        
+        $("div").has("ul").css("color", "blue");
+        $("p").has
