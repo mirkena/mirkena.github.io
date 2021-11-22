@@ -1,0 +1,85 @@
+.container{
+  margin: 10px auto;
+  background-color: blanchedalmond;
+  width: 80%;
+  padding: 5px 50px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+  margin-bottom: 0px;
+}
+.dictionary{
+  color: black;
+  font-size: 46px;
+}
+h3{
+  font-style: normal;
+}
+.search-box input {
+  border: 1px solid gray;
+  border-radius: 2px;
+  line-height: 32px;
+  padding: 4px 8px;
+  font-size: large;
+  vertical-align: middle;
+}
+
+.search-box button {
+  border: 0px;
+  border-radius: 2px;
+  line-height: 32px;
+  padding: 4px 8px;
+  font-weight: 600;
+  margin: 0px;
+  cursor: pointer;
+  color: black;
+  border: 1px solid gray;
+  width: 10%;
+}
+
+.search-result{
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.search-result p{
+  border-bottom: 1px dashed black;
+  padding: 5px 0px;
+  font-style: italic;
+}
+.number{
+  display: inline-block;
+  font-size: 16px;
+   
+  color: black;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-style: normal;
+  /* Prevent background color leak outs */
+  -webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box;
+  -webkit-border-radius: 12px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 12px; 
+
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 12px; 
+}
+.wordtype{
+  font-size: 14;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+#loader{
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-size: medium;
+}
+
