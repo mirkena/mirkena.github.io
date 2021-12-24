@@ -6,7 +6,7 @@ http.createServer(function (req, res) {
     var q = url.parse(req.url, true);
     var filename = "." + q.pathname;
     if (q.pathname == "/mirk"){
-        var res = addmod.minus(req, res, q.query);
+        var res = addmod.add(req, res, q.query);
         res.end('value = ' + res);
 
     }
