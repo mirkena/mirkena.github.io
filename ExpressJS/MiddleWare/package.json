@@ -1,0 +1,15 @@
+{
+  "name": "middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "watch": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1 w"
+  },
+  "author": "Mirkena",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
