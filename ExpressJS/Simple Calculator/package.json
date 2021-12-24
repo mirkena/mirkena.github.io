@@ -1,0 +1,22 @@
+{
+  "name": "simple-calculator",
+  "version": "1.1.0",
+  "description": "This is Mirkena Claculator in express.js in Wap Class With Bruce Luster on November 2021",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mirkena.github.io"
+  },
+  "keywords": [
+    "Mirk"
+  ],
+  "author": "Mirkena Dejene Alemu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
