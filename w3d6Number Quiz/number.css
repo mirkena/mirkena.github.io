@@ -1,0 +1,72 @@
+body{
+    ackground-color: rgb(64, 65, 61);
+}
+ h1,h2,h3,h4{
+    text-align: center;
+    background-color: rgb(64, 65, 61);
+   
+}
+
+.form .form-body {
+    display: flex;
+    margin-top: 5px;
+}
+
+.form-body .form-label {
+    font-weight: bold;
+    width: 150px;
+}
+
+.form-body .form-input {
+    flex-grow: 1;
+    max-width: 300px;
+}
+
+.form-body input[type='number']:not(.form-input) {
+    width: 50px;
+    color: rgb(53, 158, 199);
+}
+
+.form-body button {
+    background: #e2df0a;
+}
+
+.form-body .hint, footer .back {
+    color: #1187a5;
+    margin-left: 5px;
+}
+
+fieldset{
+    border-radius: 5px;
+    padding: 5px;
+    /* background-color: #eeeeee; */
+    box-shadow: 1px 2px 2px 1px #829680;
+    text-align: left;
+}
+
+fieldset legend {
+    background: rgb(159, 212, 143);
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 2px 1px #daeedc;
+    background-color: rgb(163, 149, 163);
+}
+
+fieldset p{
+    text-align: left;
+}
+
+.container {
+    width: 500px;
+    background-color: rgb(143, 153, 145);
+    padding: 0 20px 20px 20px;
+    color:rgb(255, 255, 255);
+    margin: auto auto;
+}
+
+footer a, div.form-body a{
+    height: 24px;
+    display: inline-flex;
+    text-decoration: none;
+
+}
